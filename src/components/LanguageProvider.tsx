@@ -20,6 +20,9 @@ const translations = {
     'nav.education': 'Education',
     'nav.certifications': 'Certifications',
     'nav.contact': 'Contact',
+    'nav.menu': 'Menu',
+    'nav.navigation': 'Navigation',
+    'nav.language': 'Language',
     
     // Hero Section
     'hero.greeting': 'Hello, I\'m',
@@ -84,6 +87,9 @@ const translations = {
     'nav.education': 'Formation',
     'nav.certifications': 'Certifications',
     'nav.contact': 'Contact',
+    'nav.menu': 'Menu',
+    'nav.navigation': 'Navigation',
+    'nav.language': 'Langue',
     
     // Hero Section
     'hero.greeting': 'Bonjour, je suis',
@@ -148,6 +154,9 @@ const translations = {
     'nav.education': 'التعليم',
     'nav.certifications': 'الشهادات',
     'nav.contact': 'تواصل معي',
+    'nav.menu': 'القائمة',
+    'nav.navigation': 'التنقل',
+    'nav.language': 'اللغة',
     
     // Hero Section
     'hero.greeting': 'مرحباً، أنا',
