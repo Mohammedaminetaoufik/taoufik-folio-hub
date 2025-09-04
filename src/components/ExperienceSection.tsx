@@ -15,7 +15,7 @@ const ExperienceSection = () => {
       description: 'Developing comprehensive web applications for healthcare and logistics sectors as an independent contractor.',
       achievements: [
         'Built Sinodiag - A complete medical clinic management system with AI integration',
-        'Developed EseTrack - Desktop logistics application with offline/online synchronization',
+        'Developed Essetrack - Desktop logistics application with offline/online synchronization',
         'Created Sinophyte - Traditional medicine platform with comprehensive database',
         'Managed deployment and hosting using cPanel for client projects',
         'Collaborated directly with clients to deliver custom solutions'

@@ -10,7 +10,7 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      title: 'EseTrack',
+      title: 'Essetrack',
       description: 'A desktop logistics application built with C# (.NET) that functions both offline and online, enabling seamless shipment tracking and data synchronization. Developed as a freelancer with ITC.',
       techStack: ['C#', '.NET', 'Desktop App', 'Offline/Online Sync'],
       liveUrl: 'https://essetrack.com',
