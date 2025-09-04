@@ -30,6 +30,7 @@ const translations = {
     'hero.subtitle': 'Passionate about creating innovative solutions with cutting-edge technologies',
     'hero.cta': 'View My Projects',
     'hero.contact': 'Get In Touch',
+    'hero.downloadCV': 'Download CV',
     
     // About Section
     'about.title': 'About Me',
@@ -97,6 +98,7 @@ const translations = {
     'hero.subtitle': 'Passionné par la création de solutions innovantes avec des technologies de pointe',
     'hero.cta': 'Voir Mes Projets',
     'hero.contact': 'Me Contacter',
+    'hero.downloadCV': 'Télécharger CV',
     
     // About Section
     'about.title': 'À Propos de Moi',
@@ -164,6 +166,7 @@ const translations = {
     'hero.subtitle': 'شغوف بإنشاء حلول مبتكرة باستخدام أحدث التقنيات',
     'hero.cta': 'عرض مشاريعي',
     'hero.contact': 'تواصل معي',
+    'hero.downloadCV': 'تحميل السيرة الذاتية',
     
     // About Section
     'about.title': 'نبذة عني',

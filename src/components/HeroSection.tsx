@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Mail } from 'lucide-react';
+import { ArrowRight, Mail, Download } from 'lucide-react';
 import { useLanguage } from './LanguageProvider';
 import profilePhoto from '@/assets/profile-photo.jpg';
 
@@ -53,6 +53,17 @@ const HeroSection = () => {
                 <a href="#contact" className="flex items-center">
                   <Mail className="mr-2 h-5 w-5" />
                   {t('hero.contact')}
+                </a>
+              </Button>
+              <Button 
+                size="lg" 
+                variant="ghost"
+                className="text-primary-foreground hover:bg-primary-foreground/10"
+                asChild
+              >
+                <a href="/cv.pdf" download="Mohamed_Amine_Taoufik_CV.pdf" className="flex items-center">
+                  <Download className="mr-2 h-5 w-5" />
+                  {t('hero.downloadCV')}
                 </a>
               </Button>
             </div>
