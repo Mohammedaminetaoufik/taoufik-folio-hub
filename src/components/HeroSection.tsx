@@ -47,7 +47,7 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20 backdrop-blur-sm shadow-lg hover:shadow-elegant transition-all duration-300 transform hover:scale-105"
+                className="border-primary-foreground/30 text-black hover:bg-primary-foreground/20 backdrop-blur-sm shadow-lg hover:shadow-elegant transition-all duration-300 transform hover:scale-105"
                 asChild
               >
                 <a href="#contact" className="flex items-center">
