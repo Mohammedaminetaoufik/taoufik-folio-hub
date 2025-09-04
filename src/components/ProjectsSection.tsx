@@ -11,17 +11,24 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: 'EseTrack',
-      description: 'A desktop logistics application built with C# (.NET) that functions both offline and online, enabling seamless shipment tracking and data synchronization.',
+      description: 'A desktop logistics application built with C# (.NET) that functions both offline and online, enabling seamless shipment tracking and data synchronization. Developed as a freelancer with ITC.',
       techStack: ['C#', '.NET', 'Desktop App', 'Offline/Online Sync'],
       liveUrl: 'https://essetrack.com',
       image: 'https://images.unsplash.com/photo-1566492031773-4f4e44671d66?w=500&h=300&fit=crop'
     },
     {
       title: 'Sinodiag (ITC Medical Platform)',
-      description: 'A comprehensive web-based medical clinic management system using Laravel, PHP, MySQL, and Tailwind, integrating AI to manage patient records, appointments, and consultations.',
+      description: 'A comprehensive web-based medical clinic management system using Laravel, PHP, MySQL, and Tailwind, integrating AI to manage patient records, appointments, and consultations. Developed as a freelancer with ITC.',
       techStack: ['Laravel', 'PHP', 'MySQL', 'Tailwind CSS', 'AI Integration'],
       liveUrl: 'https://sinodiag.com',
       image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=500&h=300&fit=crop'
+    },
+    {
+      title: 'Sinophyte',
+      description: 'A platform dedicated to traditional and modern medicine offering a comprehensive database for amateurs and professionals, with detailed information on medicinal plants, therapeutic formulas and syndromes. Developed as a freelancer with ITC.',
+      techStack: ['Laravel', 'MySQL', 'Traditional Medicine', 'Database Management'],
+      liveUrl: 'https://sinophyte.com',
+      image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?w=500&h=300&fit=crop'
     },
     {
       title: 'SMARTY JOB - Facial Recognition System',

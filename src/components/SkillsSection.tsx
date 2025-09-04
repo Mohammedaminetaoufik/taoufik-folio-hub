@@ -50,7 +50,8 @@ const SkillsSection = () => {
       skills: [
         { name: 'Docker', level: 80 },
         { name: 'Git/GitHub', level: 90 },
-        { name: 'REST APIs', level: 90 }
+        { name: 'REST APIs', level: 90 },
+        { name: 'cPanel', level: 85 }
       ]
     },
     {
@@ -66,7 +67,7 @@ const SkillsSection = () => {
 
   const languages = ['Python', 'Java', 'PHP', 'JavaScript', 'C#', 'HTML/CSS'];
   const frameworks = ['Laravel', 'Spring Boot', 'Node.js', '.NET', 'Tailwind CSS'];
-  const tools = ['Docker', 'Git', 'MySQL', 'OpenCV', 'REST APIs'];
+  const tools = ['Docker', 'Git', 'MySQL', 'OpenCV', 'REST APIs', 'cPanel'];
 
   return (
     <section id="skills" className="py-20 bg-background">
