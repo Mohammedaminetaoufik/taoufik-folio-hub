@@ -36,7 +36,7 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 variant="secondary"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground border-0"
+                className="bg-gradient-to-r from-accent to-accent/80 hover:from-accent/90 hover:to-accent/70 text-accent-foreground border-0 shadow-elegant hover:shadow-glow transition-all duration-300 transform hover:scale-105"
                 asChild
               >
                 <a href="#projects" className="flex items-center">
@@ -47,7 +47,7 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
+                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20 backdrop-blur-sm shadow-lg hover:shadow-elegant transition-all duration-300 transform hover:scale-105"
                 asChild
               >
                 <a href="#contact" className="flex items-center">
@@ -58,7 +58,7 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 variant="ghost"
-                className="text-primary-foreground hover:bg-primary-foreground/10"
+                className="text-primary-foreground hover:bg-primary-foreground/20 backdrop-blur-sm border border-primary-foreground/20 hover:border-primary-foreground/40 shadow-lg hover:shadow-elegant transition-all duration-300 transform hover:scale-105"
                 asChild
               >
                 <a href="/cv.pdf" download="Mohamed_Amine_Taoufik_CV.pdf" className="flex items-center">

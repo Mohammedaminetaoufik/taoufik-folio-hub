@@ -49,13 +49,13 @@ const ContactSection = () => {
       icon: Mail,
       label: 'Email',
       value: 'ataoufik031@gmail.com',
-      href: 'mailto:ataoufik031@gmail.com'
+      href: 'https://mail.google.com/mail/?view=cm&fs=1&to=ataoufik031@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
       value: '+212 618657817',
-      href: 'tel:+212618657817'
+      href: 'https://wa.me/212618657817'
     },
     {
       icon: MapPin,
@@ -110,9 +110,13 @@ const ContactSection = () => {
                       {info.href !== '#' ? (
                         <a 
                           href={info.href}
-                          className="text-muted-foreground hover:text-accent transition-colors"
+                          target={info.href.startsWith('http') ? '_blank' : '_self'}
+                          rel={info.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                          className="text-muted-foreground hover:text-accent transition-colors inline-flex items-center gap-1"
                         >
                           {info.value}
+                          {info.href.includes('wa.me') && <span className="text-xs">(WhatsApp)</span>}
+                          {info.href.includes('gmail') && <span className="text-xs">(Gmail)</span>}
                         </a>
                       ) : (
                         <p className="text-muted-foreground">{info.value}</p>
