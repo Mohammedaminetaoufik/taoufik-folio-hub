@@ -49,6 +49,13 @@ const ProjectsSection = () => {
       techStack: ['Java', 'Android', 'Laravel', 'REST API', 'IoT'],
       githubUrl: 'https://github.com',
       image: 'https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=500&h=300&fit=crop'
+    },
+    {
+      title: 'LWEM Equipements - Ecommerce Platform',
+      description: 'A comprehensive ecommerce platform for equipment sales and services, built with native PHP and MySQL, featuring product catalog, shopping cart, order management, and customer portal.',
+      techStack: ['PHP (Native)', 'MySQL', 'JavaScript', 'CSS', 'HTML'],
+      liveUrl: 'https://www.lwemequipements.com/',
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop'
     }
   ];
 
