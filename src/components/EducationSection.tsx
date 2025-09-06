@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { GraduationCap, CalendarDays } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { GraduationCap, CalendarDays, ExternalLink } from 'lucide-react';
 import { useLanguage } from './LanguageProvider';
 
 const EducationSection = () => {
@@ -12,7 +13,8 @@ const EducationSection = () => {
       school: t('education.currentSchool'),
       period: t('education.currentYear'),
       status: 'current',
-      description: 'Specializing in Full-Stack Development and Software Engineering'
+      description: 'Specializing in Full-Stack Development and Software Engineering',
+      link: 'https://emsi.ma'
     },
     {
       degree: t('education.baccalaureate'),
@@ -54,10 +56,28 @@ const EducationSection = () => {
                 </CardTitle>
               </CardHeader>
               {edu.description && (
-                <CardContent>
+                <CardContent className="space-y-4">
                   <p className="text-muted-foreground">
                     {edu.description}
                   </p>
+                  {edu.link && (
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="w-fit"
+                      asChild
+                    >
+                      <a 
+                        href={edu.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center"
+                      >
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Learn more about EMSI
+                      </a>
+                    </Button>
+                  )}
                 </CardContent>
               )}
             </Card>
