@@ -62,9 +62,9 @@ const HeroSection = () => {
                 asChild
               >
                 <a href="/cv.pdf" download="Mohamed_Amine_Taoufik_CV.pdf" className="flex items-center">
-                  <Download className="mr-2 h-5 w-5" />
-                  {t('hero.downloadCV')}
-                </a>
+  <Download className="mr-2 h-5 w-5" />
+  {t('hero.downloadCV')}
+</a>
               </Button>
             </div>
           </div>
