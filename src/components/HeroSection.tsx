@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Mail, Download } from 'lucide-react';
 import { useLanguage } from './LanguageProvider';
-import profilePhoto from '@/assets/profile-photo.jpeg';
+import profilePhoto from '@/assets/mohamed_amine_taoufik.jpeg';
 
 const HeroSection = () => {
   const { t } = useLanguage();
