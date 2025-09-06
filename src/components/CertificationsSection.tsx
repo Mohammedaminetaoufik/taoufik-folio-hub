@@ -9,43 +9,48 @@ const CertificationsSection = () => {
 
   const certifications = [
     {
-      title: 'Introduction to Cloud Computing',
-      issuer: 'IBM',
-      category: 'Cloud Computing',
+      title: t('certifications.cloudComputing'),
+      issuer: t('certifications.ibm'),
+      category: t('certifications.cloudCategory'),
       skills: ['Cloud Fundamentals', 'AWS', 'Infrastructure']
     },
     {
-      title: 'Introduction to Containers with Docker, Kubernetes & OpenShift',
-      issuer: 'IBM',
-      category: 'DevOps',
+      title: t('certifications.containers'),
+      issuer: t('certifications.ibm'),
+      category: t('certifications.devopsCategory'),
       skills: ['Docker', 'Kubernetes', 'OpenShift', 'Containerization']
     },
     {
-      title: 'Introduction to Java and Object-Oriented Programming',
-      issuer: 'University of Pennsylvania',
-      category: 'Programming',
+      title: t('certifications.javaIntro'),
+      issuer: t('certifications.upenn'),
+      category: t('certifications.programmingCategory'),
       skills: ['Java', 'OOP', 'Programming Fundamentals']
     },
     {
-      title: 'Object-Oriented Programming in C++',
-      issuer: 'EPFL',
-      category: 'Programming',
+      title: t('certifications.cppOop'),
+      issuer: t('certifications.epfl'),
+      category: t('certifications.programmingCategory'),
       skills: ['C++', 'OOP', 'Data Structures']
     },
     {
-      title: 'React Basics',
-      issuer: 'Meta',
-      category: 'Frontend Development',
+      title: t('certifications.reactBasics'),
+      issuer: t('certifications.meta'),
+      category: t('certifications.frontendCategory'),
       skills: ['React', 'JavaScript', 'Web Development']
     }
   ];
 
   const getCategoryColor = (category: string) => {
+    const cloudCategory = t('certifications.cloudCategory');
+    const devopsCategory = t('certifications.devopsCategory');
+    const programmingCategory = t('certifications.programmingCategory');
+    const frontendCategory = t('certifications.frontendCategory');
+    
     switch (category) {
-      case 'Cloud Computing': return 'bg-blue-100 text-blue-800 border-blue-200';
-      case 'DevOps': return 'bg-green-100 text-green-800 border-green-200';
-      case 'Programming': return 'bg-purple-100 text-purple-800 border-purple-200';
-      case 'Frontend Development': return 'bg-orange-100 text-orange-800 border-orange-200';
+      case cloudCategory: return 'bg-blue-100 text-blue-800 border-blue-200';
+      case devopsCategory: return 'bg-green-100 text-green-800 border-green-200';
+      case programmingCategory: return 'bg-purple-100 text-purple-800 border-purple-200';
+      case frontendCategory: return 'bg-orange-100 text-orange-800 border-orange-200';
       default: return 'bg-gray-100 text-gray-800 border-gray-200';
     }
   };
@@ -86,7 +91,7 @@ const CertificationsSection = () => {
                 </Badge>
                 
                 <div>
-                  <p className="text-sm font-medium text-muted-foreground mb-2">Skills Gained:</p>
+                  <p className="text-sm font-medium text-muted-foreground mb-2">{t('certifications.skillsGained')}</p>
                   <div className="flex flex-wrap gap-2">
                     {cert.skills.map((skill) => (
                       <Badge key={skill} variant="secondary" className="text-xs">
@@ -105,12 +110,10 @@ const CertificationsSection = () => {
           <Card className="max-w-2xl mx-auto card-gradient shadow-professional">
             <CardContent className="p-8">
               <h3 className="text-xl font-bold text-foreground mb-4">
-                Continuous Learning
+                {t('certifications.continuousLearning')}
               </h3>
               <p className="text-muted-foreground">
-                I'm committed to staying current with the latest technologies and best practices 
-                in software development. These certifications represent my dedication to 
-                professional growth and learning from industry leaders.
+                {t('certifications.learningDesc')}
               </p>
             </CardContent>
           </Card>

@@ -1,7 +1,9 @@
 import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { useLanguage } from './LanguageProvider';
 
 const Footer = () => {
+  const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -10,41 +12,41 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">Mohamed Amine Taoufik</h3>
+            <h3 className="text-xl font-bold">{t('footer.brand')}</h3>
             <p className="text-primary-foreground/80">
-              Full-Stack Developer & Software Engineer
+              {t('footer.tagline')}
             </p>
             <p className="text-primary-foreground/60">
-              Creating innovative solutions with cutting-edge technologies
+              {t('footer.description')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="font-semibold">Quick Links</h4>
+            <h4 className="font-semibold">{t('footer.quickLinks')}</h4>
             <nav className="flex flex-col space-y-2">
               <a href="#about" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                About
+                {t('nav.about')}
               </a>
               <a href="#skills" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Skills
+                {t('nav.skills')}
               </a>
               <a href="#projects" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Projects
+                {t('nav.projects')}
               </a>
               <a href="#contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                Contact
+                {t('nav.contact')}
               </a>
             </nav>
           </div>
 
           {/* Contact & Social */}
           <div className="space-y-4">
-            <h4 className="font-semibold">Get in Touch</h4>
+            <h4 className="font-semibold">{t('footer.getInTouch')}</h4>
             <div className="space-y-2">
               <p className="text-primary-foreground/80">ataoufik031@gmail.com</p>
               <p className="text-primary-foreground/80">+212 618657817</p>
-              <p className="text-primary-foreground/80">Marrakech, Morocco</p>
+              <p className="text-primary-foreground/80">{t('contact.location')}</p>
             </div>
             <div className="flex space-x-4">
               <a
@@ -78,7 +80,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-primary-foreground/60">
-            © {currentYear} Mohamed Amine Taoufik. All rights reserved.
+            © {currentYear} {t('footer.brand')}. {t('footer.rights')}
           </p>
         </div>
       </div>

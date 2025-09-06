@@ -106,7 +106,7 @@ const SkillsSection = () => {
         {/* Technology Tags */}
         <div className="space-y-8">
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-center">Programming Languages</h3>
+            <h3 className="text-xl font-semibold mb-4 text-center">{t('skills.programming')}</h3>
             <div className="flex flex-wrap justify-center gap-3">
               {languages.map((lang) => (
                 <Badge key={lang} variant="secondary" className="px-4 py-2 text-sm">
@@ -117,7 +117,7 @@ const SkillsSection = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-center">Frameworks & Libraries</h3>
+            <h3 className="text-xl font-semibold mb-4 text-center">{t('skills.frameworks')}</h3>
             <div className="flex flex-wrap justify-center gap-3">
               {frameworks.map((framework) => (
                 <Badge key={framework} variant="outline" className="px-4 py-2 text-sm border-accent text-accent">
@@ -128,7 +128,7 @@ const SkillsSection = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-center">Tools & Technologies</h3>
+            <h3 className="text-xl font-semibold mb-4 text-center">{t('skills.tools')}</h3>
             <div className="flex flex-wrap justify-center gap-3">
               {tools.map((tool) => (
                 <Badge key={tool} className="px-4 py-2 text-sm bg-primary text-primary-foreground">

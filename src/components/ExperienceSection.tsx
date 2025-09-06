@@ -8,30 +8,30 @@ const ExperienceSection = () => {
 
   const experiences = [
     {
-      title: 'Freelance Full-Stack Developer',
-      company: 'ITC (Various Projects)',
-      duration: '2023 - Present',
-      location: 'Remote',
-      description: 'Developing comprehensive web applications for healthcare and logistics sectors as an independent contractor.',
+      title: t('experience.freelance'),
+      company: t('experience.itc'),
+      duration: t('experience.freelanceDuration'),
+      location: t('experience.remote'),
+      description: t('experience.freelanceDesc'),
       achievements: [
-        'Built Sinodiag - A complete medical clinic management system with AI integration',
-        'Developed Essetrack - Desktop logistics application with offline/online synchronization',
-        'Created Sinophyte - Traditional medicine platform with comprehensive database',
-        'Managed deployment and hosting using cPanel for client projects',
-        'Collaborated directly with clients to deliver custom solutions'
+        t('experience.achievement1'),
+        t('experience.achievement2'),
+        t('experience.achievement3'),
+        t('experience.achievement4'),
+        t('experience.achievement5')
       ]
     },
     {
       title: t('experience.internship'),
       company: t('experience.company'),
       duration: t('experience.duration'),
-      location: 'Morocco',
+      location: t('experience.morocco'),
       description: t('experience.description'),
       achievements: [
-        'Developed enterprise-level maintenance management systems',
-        'Implemented equipment tracking and scheduling features',
-        'Created technician request handling workflows',
-        'Gained experience with Laravel and MySQL in production environment'
+        t('experience.achievementIntern1'),
+        t('experience.achievementIntern2'),
+        t('experience.achievementIntern3'),
+        t('experience.achievementIntern4')
       ]
     }
   ];
@@ -78,7 +78,7 @@ const ExperienceSection = () => {
                   {experience.description}
                 </p>
                 <div className="bg-muted/50 p-4 rounded-lg">
-                  <h4 className="font-medium text-foreground mb-2">Key Achievements:</h4>
+                  <h4 className="font-medium text-foreground mb-2">{t('experience.keyAchievements')}</h4>
                   <ul className="list-disc list-inside space-y-1 text-muted-foreground">
                     {experience.achievements.map((achievement, achievementIndex) => (
                       <li key={achievementIndex}>{achievement}</li>

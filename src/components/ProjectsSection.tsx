@@ -11,48 +11,48 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: 'Essetrack',
-      description: 'A desktop logistics application built with C# (.NET) that functions both offline and online, enabling seamless shipment tracking and data synchronization. Developed as a freelancer with ITC.',
+      description: t('projects.essetrack'),
       techStack: ['C#', '.NET', 'Desktop App', 'Offline/Online Sync'],
       liveUrl: 'https://essetrack.com',
       image: 'https://images.unsplash.com/photo-1566492031773-4f4e44671d66?w=500&h=300&fit=crop'
     },
     {
       title: 'Sinodiag (ITC Medical Platform)',
-      description: 'A comprehensive web-based medical clinic management system using Laravel, PHP, MySQL, and Tailwind, integrating AI to manage patient records, appointments, and consultations. Developed as a freelancer with ITC.',
+      description: t('projects.sinodiag'),
       techStack: ['Laravel', 'PHP', 'MySQL', 'Tailwind CSS', 'AI Integration'],
       liveUrl: 'https://sinodiag.com',
       image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=500&h=300&fit=crop'
     },
     {
       title: 'Sinophyte',
-      description: 'A platform dedicated to traditional and modern medicine offering a comprehensive database for amateurs and professionals, with detailed information on medicinal plants, therapeutic formulas and syndromes. Developed as a freelancer with ITC.',
+      description: t('projects.sinophyte'),
       techStack: ['Laravel', 'MySQL', 'Traditional Medicine', 'Database Management'],
       liveUrl: 'https://sinophyte.com',
       image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?w=500&h=300&fit=crop'
     },
     {
       title: 'SMARTY JOB - Facial Recognition System',
-      description: 'A real-time facial recognition system developed in Python using OpenCV and MySQL for secure user authentication, complete with web interface and profile management.',
+      description: t('projects.smartyJob'),
       techStack: ['Python', 'OpenCV', 'MySQL', 'Web Interface', 'Authentication'],
       githubUrl: 'https://github.com',
       image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop'
     },
     {
       title: 'GMAO Web Application for ONDA',
-      description: 'A computerized maintenance management system created during internship, allowing equipment tracking, maintenance scheduling, and technician request handling.',
+      description: t('projects.gmao'),
       techStack: ['Laravel', 'MySQL', 'Web Application', 'CMMS'],
       image: 'https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=500&h=300&fit=crop'
     },
     {
       title: 'Smart Traffic Light System',
-      description: 'An intelligent system combining a Java-based Android mobile app and Laravel backend with REST API to dynamically control traffic lights and prioritize emergency vehicles.',
+      description: t('projects.smartTraffic'),
       techStack: ['Java', 'Android', 'Laravel', 'REST API', 'IoT'],
       githubUrl: 'https://github.com',
       image: 'https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=500&h=300&fit=crop'
     },
     {
       title: 'LWEM Equipements - Ecommerce Platform',
-      description: 'A comprehensive ecommerce platform for equipment sales and services, built with native PHP and MySQL, featuring product catalog, shopping cart, order management, and customer portal.',
+      description: t('projects.lwem'),
       techStack: ['PHP (Native)', 'MySQL', 'JavaScript', 'CSS', 'HTML'],
       liveUrl: 'https://www.lwemequipements.com/',
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop'

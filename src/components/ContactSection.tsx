@@ -29,8 +29,8 @@ const ContactSection = () => {
     
     // Show success message
     toast({
-      title: "Email client opened!",
-      description: "Your message has been prepared in your email client.",
+      title: t('contact.emailOpened'),
+      description: t('contact.emailDesc'),
     });
     
     // Reset form
@@ -97,7 +97,7 @@ const ContactSection = () => {
           <div className="space-y-8">
             <Card className="card-gradient shadow-professional">
               <CardHeader>
-                <CardTitle>Contact Information</CardTitle>
+                <CardTitle>{t('contact.information')}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 {contactInfo.map((info, index) => (
@@ -130,7 +130,7 @@ const ContactSection = () => {
             {/* Social Links */}
             <Card className="card-gradient shadow-professional">
               <CardHeader>
-                <CardTitle>Connect with me</CardTitle>
+                <CardTitle>{t('contact.connect')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex space-x-4">
@@ -154,7 +154,7 @@ const ContactSection = () => {
           {/* Contact Form */}
           <Card className="card-gradient shadow-professional">
             <CardHeader>
-              <CardTitle>Send me a message</CardTitle>
+              <CardTitle>{t('contact.sendMessage')}</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -167,7 +167,7 @@ const ContactSection = () => {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="Your full name"
+                    placeholder={t('contact.namePlaceholder')}
                   />
                 </div>
 
@@ -180,7 +180,7 @@ const ContactSection = () => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="your.email@example.com"
+                    placeholder={t('contact.emailPlaceholder')}
                   />
                 </div>
 
@@ -193,7 +193,7 @@ const ContactSection = () => {
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Tell me about your project or just say hello!"
+                    placeholder={t('contact.messagePlaceholder')}
                   />
                 </div>
 

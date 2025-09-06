@@ -9,18 +9,18 @@ const AboutSection = () => {
   const highlights = [
     {
       icon: Code,
-      title: 'Full-Stack Development',
-      description: 'Expertise in both frontend and backend technologies'
+      title: t('about.fullstack'),
+      description: t('about.fullstackDesc')
     },
     {
       icon: Lightbulb,
-      title: 'Innovation',
-      description: 'Creating cutting-edge solutions for real-world problems'
+      title: t('about.innovation'),
+      description: t('about.innovationDesc')
     },
     {
       icon: Globe,
-      title: 'Multilingual',
-      description: 'Fluent in Arabic, French, and English'
+      title: t('about.multilingual'),
+      description: t('about.multilingualDesc')
     }
   ];
 

@@ -13,7 +13,7 @@ const EducationSection = () => {
       school: t('education.currentSchool'),
       period: t('education.currentYear'),
       status: 'current',
-      description: 'Specializing in Full-Stack Development and Software Engineering',
+      description: t('education.currentDesc'),
       link: 'https://emsi.ma'
     },
     {
@@ -74,7 +74,7 @@ const EducationSection = () => {
                         className="flex items-center"
                       >
                         <ExternalLink className="w-4 h-4 mr-2" />
-                        Learn more about EMSI
+                        {t('education.learnMore')}
                       </a>
                     </Button>
                   )}
