@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { ExternalLink, Github } from 'lucide-react';
 import { useLanguage } from './LanguageProvider';
 
 const ProjectsSection = () => {
   const { t } = useLanguage();
+  const [selectedProject, setSelectedProject] = useState<any>(null);
 
   const projects = [
     {
@@ -70,7 +72,11 @@ const ProjectsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="group card-gradient shadow-professional hover:shadow-xl transition-all duration-300 overflow-hidden">
+            <Card 
+              key={index} 
+              className="group card-gradient shadow-professional hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer"
+              onClick={() => setSelectedProject(project)}
+            >
               {/* Project Image */}
               <div className="relative overflow-hidden">
                 <img
@@ -111,6 +117,9 @@ const ProjectsSection = () => {
                     <Button 
                       size="sm" 
                       className="flex-1 bg-accent hover:bg-accent/90"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                      }}
                       asChild
                     >
                       <a 
@@ -129,6 +138,9 @@ const ProjectsSection = () => {
                       variant="outline" 
                       size="sm" 
                       className="flex-1"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                      }}
                       asChild
                     >
                       <a 
@@ -148,6 +160,86 @@ const ProjectsSection = () => {
           ))}
         </div>
       </div>
+
+      {/* Project Details Dialog */}
+      <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+          {selectedProject && (
+            <>
+              <DialogHeader>
+                <DialogTitle className="text-2xl font-bold text-primary">
+                  {selectedProject.title}
+                </DialogTitle>
+              </DialogHeader>
+              
+              {/* Project Image */}
+              <div className="relative overflow-hidden rounded-lg">
+                <img
+                  src={selectedProject.image}
+                  alt={selectedProject.title}
+                  className="w-full h-64 object-cover"
+                />
+              </div>
+
+              {/* Project Description */}
+              <DialogDescription className="text-base text-foreground">
+                {selectedProject.description}
+              </DialogDescription>
+
+              {/* Tech Stack */}
+              <div className="space-y-2">
+                <h4 className="text-sm font-semibold text-foreground">
+                  {t('projects.techStack')}:
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {selectedProject.techStack.map((tech: string) => (
+                    <Badge key={tech} variant="secondary" className="text-sm">
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="flex gap-3 pt-4">
+                {selectedProject.liveUrl && (
+                  <Button 
+                    className="flex-1 bg-accent hover:bg-accent/90"
+                    asChild
+                  >
+                    <a 
+                      href={selectedProject.liveUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center"
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      {t('projects.viewLive')}
+                    </a>
+                  </Button>
+                )}
+                {selectedProject.githubUrl && (
+                  <Button 
+                    variant="outline" 
+                    className="flex-1"
+                    asChild
+                  >
+                    <a 
+                      href={selectedProject.githubUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center"
+                    >
+                      <Github className="w-4 h-4 mr-2" />
+                      {t('projects.viewCode')}
+                    </a>
+                  </Button>
+                )}
+              </div>
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
