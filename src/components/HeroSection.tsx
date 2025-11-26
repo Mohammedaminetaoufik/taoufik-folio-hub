@@ -61,10 +61,10 @@ const HeroSection = () => {
                 className="text-primary-foreground hover:bg-primary-foreground/20 backdrop-blur-sm border border-primary-foreground/20 hover:border-primary-foreground/40 shadow-lg hover:shadow-elegant transition-all duration-300 transform hover:scale-105"
                 asChild
               >
-                <a href="/cv.pdf" download="Mohamed_Amine_Taoufik_CV.pdf" className="flex items-center">
-  <Download className="mr-2 h-5 w-5" />
-  {t('hero.downloadCV')}
-</a>
+                <a href="/TAOUFIK_mohamed_amine.pdf" download="Mohamed_Amine_Taoufik_CV.pdf" className="flex items-center">
+                   <Download className="mr-2 h-5 w-5" />
+                   {t('hero.downloadCV')}
+                </a>
               </Button>
             </div>
           </div>
