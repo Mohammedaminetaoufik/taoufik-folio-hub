@@ -34,7 +34,7 @@ const translations = {
     
     // About Section
     'about.title': 'About Me',
-    'about.description': 'I am a fourth-year engineering student at École Marocaine des Sciences de l\'Ingénieur, specializing in full-stack development. My passion for software development drives me to create innovative solutions using modern technologies.',
+    'about.description': 'I am a fifth-year engineering student at École Marocaine des Sciences de l\'Ingénieur, specializing in full-stack development. My passion for software development drives me to create innovative solutions using modern technologies.',
     'about.languages': 'Languages: Arabic (Native), French & English (Fluent)',
     'about.fullstack': 'Full-Stack Development',
     'about.fullstackDesc': 'Expertise in both frontend and backend technologies',
@@ -94,7 +94,7 @@ const translations = {
     'education.title': 'Education',
     'education.current': 'Engineering Degree (In Progress)',
     'education.currentSchool': 'École Marocaine des Sciences de l\'Ingénieur',
-    'education.currentYear': '4th Year, 2021 - Present',
+    'education.currentYear': '5th Year, 2021 - Present',
     'education.baccalaureate': 'Baccalaureate',
     'education.bacSchool': 'École Nour Alhiba, Kalaat Sraghna',
     'education.bacYear': '2021',
@@ -168,7 +168,7 @@ const translations = {
     
     // About Section
     'about.title': 'À Propos de Moi',
-    'about.description': 'Je suis étudiant en quatrième année d\'ingénieur à l\'École Marocaine des Sciences de l\'Ingénieur, spécialisé en développement full-stack. Ma passion pour le développement logiciel me pousse à créer des solutions innovantes en utilisant des technologies modernes.',
+    'about.description': 'Je suis étudiant en cinquième année d\'ingénieur à l\'École Marocaine des Sciences de l\'Ingénieur, spécialisé en développement full-stack. Ma passion pour le développement logiciel me pousse à créer des solutions innovantes en utilisant des technologies modernes.',
     'about.languages': 'Langues : Arabe (Natif), Français et Anglais (Courant)',
     'about.fullstack': 'Développement Full-Stack',
     'about.fullstackDesc': 'Expertise en technologies frontend et backend',
@@ -228,7 +228,7 @@ const translations = {
     'education.title': 'Formation',
     'education.current': 'Diplôme d\'Ingénieur (En Cours)',
     'education.currentSchool': 'École Marocaine des Sciences de l\'Ingénieur',
-    'education.currentYear': '4ème Année, 2021 - Présent',
+    'education.currentYear': '5ème Année, 2021 - Présent',
     'education.baccalaureate': 'Baccalauréat',
     'education.bacSchool': 'École Nour Alhiba, Kalaat Sraghna',
     'education.bacYear': '2021',
@@ -302,7 +302,7 @@ const translations = {
     
     // About Section
     'about.title': 'نبذة عني',
-    'about.description': 'أنا طالب في السنة الرابعة من الهندسة في المدرسة المغربية لعلوم المهندس، متخصص في التطوير المتكامل. شغفي بتطوير البرمجيات يدفعني لإنشاء حلول مبتكرة باستخدام التقنيات الحديثة.',
+    'about.description': 'أنا طالب في السنة الخامسة من الهندسة في المدرسة المغربية لعلوم المهندس، متخصص في التطوير المتكامل. شغفي بتطوير البرمجيات يدفعني لإنشاء حلول مبتكرة باستخدام التقنيات الحديثة.',
     'about.languages': 'اللغات: العربية (الأم)، الفرنسية والإنجليزية (طلاقة)',
     'about.fullstack': 'التطوير المتكامل',
     'about.fullstackDesc': 'خبرة في تقنيات الواجهة الأمامية والخلفية',
@@ -362,7 +362,7 @@ const translations = {
     'education.title': 'التعليم',
     'education.current': 'شهادة الهندسة (قيد الدراسة)',
     'education.currentSchool': 'المدرسة المغربية لعلوم المهندس',
-    'education.currentYear': 'السنة الرابعة، 2021 - الحاضر',
+    'education.currentYear': 'السنة الخامسة، 2021 - الحاضر',
     'education.baccalaureate': 'شهادة البكالوريا',
     'education.bacSchool': 'مدرسة نور الحيبة، قلعة السراغنة',
     'education.bacYear': '2021',
